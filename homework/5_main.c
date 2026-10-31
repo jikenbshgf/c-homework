@@ -2,7 +2,7 @@
 // 肖承祥
 
 #include <stdio.h>
-int main()
+int main(void)
 {
 float a;
 float b;
@@ -15,17 +15,17 @@ scanf("%f %c %f", &a, &op, &b);
 if (op == '+')
 {
     result = a + b;
-    printf("结果为: %.2f\n", result);
+    printf("%.2f\n", result);
 }
 else if (op == '-')
 {
     result = a - b;
-    printf("结果为: %.2f\n", result);
+    printf("%.2f\n", result);
 }
 else if (op == '*')
 {
     result = a * b;
-    printf("结果为: %.2f\n", result);
+    printf("%.2f\n", result);
 }
 else if (op == '/')
 {
@@ -37,11 +37,11 @@ else if (op == '/')
     else
     {
           result = a / b;
-        printf("结果为: %.2f\n", result);
+        printf("%.2f\n", result);
        
     }
 }
-else
+    else
 {
     printf("错误: 不支持的运算符。\n");
 }
